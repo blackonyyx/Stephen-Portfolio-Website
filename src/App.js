@@ -1,27 +1,44 @@
-import './App.scss';
-import NavBar from './Components/SideBar';
+import React from 'react';
 import styled from 'styled-components';
 import SideBar from './Components/SideBar';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-        <AppStyled>
-          <div className="App">
-            <SideBar />
+    <div className="App">
+      <SideBar />
+      <MainContentStyled>
+          <div className="lines">
+            <div className="line-1"> </div>
+            <div className="line-2"> </div>
+            <div className="line-3"> </div>
+            <div className="line-4"> </div>
           </div>
-        </AppStyled>
-    // <div className="App">
-    //   <div className="sidebar">
-    //     <NavBar/>
-    //   </div>
-    //   <div className="main-content">
+          <HomePage />
+      </MainContentStyled>
+    </div>
 
-    //   </div>
-    // </div>
   );
 }
-const AppStyled = styled.div`
-  background-color: red;
+
+const MainContentStyled = styled.main `
+  position: relative;
+  margin-left: 16.3rem;
+  min-height: 100vh;
+  .lines {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .line-1, .line-2, .line-3, .line-4 {
+      width: .1rem;
+      min-height: 100vh;
+      background-color: var(--border-color);
+    }
+  }
 `;
+
+
 
 export default App;

@@ -1,5 +1,4 @@
 import React from 'react'
-import avatar from '../img/avatar.jpg';
 import styled from 'styled-components';
 import Navigation from './Navigation';
 
