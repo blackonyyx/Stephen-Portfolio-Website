@@ -1,13 +1,14 @@
 import './App.scss';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/SideBar';
 import styled from 'styled-components';
+import SideBar from './Components/SideBar';
 
 function App() {
   return (
         <AppStyled>
-          <h1>
-            styled components
-          </h1>
+          <div className="App">
+            <SideBar />
+          </div>
         </AppStyled>
     // <div className="App">
     //   <div className="sidebar">
