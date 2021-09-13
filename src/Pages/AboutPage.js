@@ -1,15 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
-import {MainLayout} from "../styles/Layouts";
+import {InnerLayout, MainLayout} from "../styles/Layouts";
 import Title from '../Components/Title';
 import ImageSection from '../Components/ImageSection';
+import ServicesSection from '../Components/ServicesSection';
+import ReviewSection from '../Components/ReviewSection';
 
 function AboutPage() {
     return (
         <MainLayout>
             <AboutStyled>
                 <Title title={"About Me"} span= {"About Me"} />
-                <ImageSection />
+                <InnerLayout >
+                    <ImageSection />
+                    <ServicesSection />
+                    <ReviewSection />
+                </ InnerLayout>
             </AboutStyled>
         </MainLayout>
         

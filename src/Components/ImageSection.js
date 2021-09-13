@@ -1,34 +1,41 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import resume from '../img/portfolioimage.jpg'
+import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
     return (
         <ImageSectionStyled>
             <div className="left-content">
-                <iframe src={"https://github.com/blackonyyx/Stephen-Portfolio-Website/blob/master/src/img/Stephen%20Resume%20Y2%20Summer.pdf"} />
+                <img src={resume} alt = "resume" />
             </div>
             <div className="right-content">
-                <div className="sub-title">
-                    <h4> I am <span>Lorem Ipsum</span></h4>
+                <h4> I am <span>Lorem Ipsum</span></h4>
+                <p className="paragraph">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+                <div className="about-info">
+                    <div className="info-title">
+                        <p>Full Name </p>
+                        <p>Age </p>
+                        <p>Nationality </p>
+                        <p>Languages </p>
+                        <p>Location </p>
+                        <p>Service </p>
+                    </div>
+                    <div className="info">
+                        <p>: Stephen Tan Hin Khai </p>
+                        <p>: 23 </p>
+                        <p>: Singaporean </p>
+                        <p>: English, Chinese </p>
+                        <p>: Singapore, Singapore </p>
+                        <p>: Looking for Jobs in FrontEnd, Data Science and DevOps </p>
+                    </div>
                 </div>
-            </div>
-            <p className="paragraph">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <div className="about-info">
-                <div className="info">
-                    <p> Stephen Tan Hin Khai </p>
-                    <p> 23 </p>
-                    <p> Singaporean </p>
-                    <p> English, Chinese </p>
-                    <p> Singapore, Singapore </p>
-                    <p> Looking for Jobs in FrontEnd, Data Science and DevOps </p>
-                </div>
+                <PrimaryButton title={"Download CV"}/>
             </div>
         </ImageSectionStyled>
     )
@@ -39,8 +46,11 @@ const ImageSectionStyled = styled.div`
     display: flex;
     .left-content {
         width: 100%;
+        height: 40vh;
         img {
             width: 90%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -58,14 +68,20 @@ const ImageSectionStyled = styled.div`
 
         .about-info {
             display: flex;
+            padding-bottom: 1.4rem;
             .info-title {
                 padding-right: 2rem;
+                p {
+                    font-weight: 600;
+                }
             }
             .info-title, .info {
                 p {
                     padding: 0.3rem 0;
                 }
             }
+
+
         }
     }
 `;
