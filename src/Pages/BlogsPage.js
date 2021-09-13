@@ -21,6 +21,11 @@ function BlogsPage() {
                                 {blog.title}
                             </a>
                         </div>
+                        <div className="blurb" >
+                            <p>
+                                {blog.blurb}
+                            </p>
+                        </ div>
                     </div>
                 })
             }
@@ -69,6 +74,11 @@ const BlogsStyled = styled.div`
                     color: var(--primary-color);
                 }
             }
+        }
+        .blurb {
+            p {
+            padding: 0.8rem 0;
+        }
         }
     }
 `
