@@ -2,6 +2,7 @@
 
 Credits for base design go to: https://github.com/Maclinz/final-portfolio-2
 
+This Repository Serves as a archive of the steps involved in getting the portfolio website up. Hence it is not connected to github-pages
 
 # Getting Started with Create React App
 
