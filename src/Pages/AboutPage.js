@@ -23,7 +23,9 @@ function AboutPage() {
 }
 
 const AboutStyled = styled.section ` 
-
+    @media screen and (max-width: 1000px) {
+        
+    }
 `;
 
 export default AboutPage

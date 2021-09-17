@@ -15,10 +15,10 @@ const ReviewItemStyled = styled.div`
     background-color: var(--background-dark-grey);
     position: relative;
     width: 100%;
-    &::not(::first-child) {
+    &:not(:first-child) {
 
     }
-    &::after {
+    &:after {
         content: "";
         position: absolute;
         left: 1rem;

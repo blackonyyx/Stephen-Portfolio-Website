@@ -14,23 +14,25 @@ function ServicesSection() {
             <ServicesStyled>
                 <Title title={'Services'} span={'services'} />
                 <div className="services">
-                    <ServiceCard 
-                        image= {design}
-                        title={"Web Design"}
-                        paragraph={"Lorem ipsum dolor sit amet cosectetur adipisicing"}
-                     />
+                    
                      <div className="mid-card" >
                         <ServiceCard 
                             image= {ai}
-                            title={"Artificial Intelligence"}
-                            paragraph={"Lorem ipsum dolor sit amet cosectetur adipisicing"}
+                            title={"Data Science"}
+                            paragraph={"Data Analysis, Data Visualisation and Machine Learning"}
                         />
                     </div>
 
                      <ServiceCard 
                         image= {cloud}
                         title={"Cloud Computing"}
-                        paragraph={"Lorem ipsum dolor sit amet cosectetur adipisicing"}
+                        paragraph={"Cloud Services, Micro-services and Kubernetes"}
+                     />
+                     
+                     <ServiceCard 
+                        image= {design}
+                        title={"Web Design"}
+                        paragraph={"UX Design, React JS and Styled-Components"}
                      />
                 </div>
             </ServicesStyled>
@@ -40,11 +42,23 @@ function ServicesSection() {
 
 const ServicesStyled = styled.section `
     .services {
-        display: flex;
-        justify-content: space-between;
-        margin: 0.5rem;
-        .mid-card {
-            margin: 0 1.2rem;
+        margin-top: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        display: grid;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+
+        }
+        @media screen and (max-width: 950px) {
+            flex-direction: column;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        @media screen and (max-width: 650px) {
+            flex-direction: column;
+            grid-template-columns: repeat(1, 1fr);
+
         }
     }
 `;

@@ -11,7 +11,7 @@ function HomePage() {
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Lorem Ipsum</span></h1>
+                <h1>Hi, I'm <span>Stephen Tan</span></h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Atque nihil voluptates ea dolore vel 
@@ -49,6 +49,7 @@ const HomePageStyled = styled.header`
         transform: translate(-50%,-50%);
         text-align: center;
         width: 80%;
+
 
         .icons {
             display: flex;
