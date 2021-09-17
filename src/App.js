@@ -64,7 +64,7 @@ function App() {
           
           
           <Switching>
-            <Route path="/" exact>
+            <Route path="/blackonyyx" exact>
               <HomePage />
             </Route>
             <Route path="/about" exact>
