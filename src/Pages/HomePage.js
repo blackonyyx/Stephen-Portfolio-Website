@@ -13,9 +13,7 @@ function HomePage() {
             <div className="typography">
                 <h1>Hi, I'm <span>Stephen Tan</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    This page is still a Work In Progress
                 </p>
                 <div className="icons">
                     <a href="https://www.instagram.com/hinkhai/" className="icon i-instagram">

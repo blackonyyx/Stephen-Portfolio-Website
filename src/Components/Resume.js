@@ -38,24 +38,6 @@ function Resume() {
                             }
                             return <ResumeItem date={x.date} title={x.title} subTitle={x.subTitle} text={x.text} link={x.link} />
                         })}
-                        {/* <ResumeItem year={'2021 May - Aug'} 
-                        title = {"Software Engineer (Machine Learning)"} 
-                        subTitle={"Xnergy Autonomous Power Technologies"}
-                        text= {[ `Implemented a end-to-end predictive pipeline for predicting battery State-of-Health projections
-                         based on charge data from Xnergy charge receiving units, deployed on to Xnergy’s fleet of chargers, using Alibaba Cloud tools`, 
-                        `Developed and integrated a encrypted bootloader for protection of proprietary firmware on Xnergy Micro-Controllers using C`]} />
-                         <ResumeItem year={'2021 May - Aug'} 
-                        title = {"Software Engineer (Machine Learning)"} 
-                        subTitle={"Xnergy Autonomous Power Technologies"}
-                        text= {[ `Implemented a end-to-end predictive pipeline for predicting battery State-of-Health projections
-                         based on charge data from Xnergy charge receiving units, deployed on to Xnergy’s fleet of chargers, using Alibaba Cloud tools`, 
-                        `Developed and integrated a encrypted bootloader for protection of proprietary firmware on Xnergy Micro-Controllers using C`]} />
-                         <ResumeItem year={'2021 May - Aug'} 
-                        title = {"Software Engineer (Machine Learning)"} 
-                        subTitle={"Xnergy Autonomous Power Technologies"}
-                        text= {[ `Implemented a end-to-end predictive pipeline for predicting battery State-of-Health projections
-                         based on charge data from Xnergy charge receiving units, deployed on to Xnergy’s fleet of chargers, using Alibaba Cloud tools`, 
-                        `Developed and integrated a encrypted bootloader for protection of proprietary firmware on Xnergy Micro-Controllers using C`]} /> */}
                     </div>
                     <div>
                         <SmallTitle icon={edu} title={"Education and Co-Curricular"}/>
@@ -76,7 +58,7 @@ function Resume() {
                         <SmallTitle icon={proj} title={"Projects"}/>
                     </div>
                     <div className="resume-content">
-                    
+
                      {projects.map((x)=> {
                             if (x.id === lastProj) {
                                 return (

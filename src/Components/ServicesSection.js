@@ -13,22 +13,19 @@ function ServicesSection() {
         <InnerLayout>
             <ServicesStyled>
                 <Title title={'Services'} span={'services'} />
-                <div className="services">
-                    
-                     <div className="mid-card" >
-                        <ServiceCard 
-                            image= {ai}
-                            title={"Data Science"}
-                            paragraph={"Data Analysis, Data Visualisation and Machine Learning"}
-                        />
-                    </div>
+                <div className="services">                    
+                    <ServiceCard 
+                        image= {ai}
+                        title={"Data Science"}
+                        paragraph={"Data Analysis, Data Visualisation and Machine Learning"}
+                    />
 
                      <ServiceCard 
                         image= {cloud}
                         title={"Cloud Computing"}
                         paragraph={"Cloud Services, Micro-services and Kubernetes"}
                      />
-                     
+
                      <ServiceCard 
                         image= {design}
                         title={"Web Design"}
