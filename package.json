@@ -1,5 +1,6 @@
-{
-  "name": "my-portfolio-website",
+{ 
+  "homepage": "https://stephen-tan.com",
+  "name": "stephen-tan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
